@@ -1,0 +1,15 @@
+create database pucc;
+use pucc;
+
+create table semestre2(
+    materia varchar(30),
+    RA int(8),
+    professor varchar(30),
+    primary key (materia)
+);
+
+insert into semestre2(materia, RA, professor) values ("programacao", 22001129, "xastre");
+insert into semestre2(materia, RA, professor) values ("web", 22001130, "pannain");
+insert into semestre2(materia, RA, professor) values ("sistemas", 22001159, "freitas");
+
+select * from semestre2;
