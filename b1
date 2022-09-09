@@ -1,0 +1,27 @@
+create database pucc;
+use pucc;
+
+create table materia(
+    materia varchar(30),
+    ID int(8),
+    RA int(8),
+    RP int(8)
+);
+
+create table aluno(
+    RA int(8),
+    nome varchar(30),
+    curso varchar(30) 
+);
+
+create table professores(
+    nomep varchar(30),
+    RP int(8),
+    materia varchar(30)
+);
+
+insert into semestre2(materia, RA, professor) values ("programacao", 22001129, "xastre");
+insert into semestre2(materia, RA, professor) values ("web", 22001130, "pannain");
+insert into semestre2(materia, RA, professor) values ("sistemas", 22001159, "freitas");
+
+select * from semestre2;
