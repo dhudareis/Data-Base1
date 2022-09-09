@@ -1,27 +1,26 @@
-create database pucc;
-use pucc;
+create database puc2;
+use puc2;
 
 create table materia(
     materia varchar(30),
     ID int,
     RA int,
-    RP int
+    RP varchar(10)
 );
-
 create table aluno(
     RA int,
     nome varchar(30),
     curso varchar(30) 
 );
-
 create table professores(
     nomep varchar(30),
-    RP int,
+    RP varchar(10),
     materia varchar(30)
 );
+insert into materia(materia, ID, RA, RP) values ("programacao", 2345, 22001129, "P965765");
+insert into materia(materia, ID, RA, RP) values ("web", 1586, 22001130, "P968372");
 
-insert into semestre2(materia, RA, professor) values ("programacao", 22001129, "xastre");
-insert into semestre2(materia, RA, professor) values ("web", 22001130, "pannain");
-insert into semestre2(materia, RA, professor) values ("sistemas", 22001159, "freitas");
 
-select * from semestre2;
+select * from materia;
+select * from aluno;
+select * from professores;
