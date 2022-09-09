@@ -3,20 +3,20 @@ use pucc;
 
 create table materia(
     materia varchar(30),
-    ID int(8),
-    RA int(8),
-    RP int(8)
+    ID int,
+    RA int,
+    RP int
 );
 
 create table aluno(
-    RA int(8),
+    RA int,
     nome varchar(30),
     curso varchar(30) 
 );
 
 create table professores(
     nomep varchar(30),
-    RP int(8),
+    RP int,
     materia varchar(30)
 );
 
