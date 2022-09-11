@@ -1,0 +1,35 @@
+create database puc2;
+use puc2;
+
+create table materia(
+    materia varchar(30),
+    ID int,
+    RA int,
+    RP varchar(10)
+);
+create table aluno(
+    RA int,
+    nome varchar(30),
+    curso varchar(30) 
+);
+create table professor(
+    nomep varchar(30),
+    RP varchar(10),
+    materia varchar(30)
+);
+
+insert into materia(materia, ID, RA, RP) values ("Sistemas Digitais", 224345, 22001129, "P96837234");
+insert into materia(materia, ID, RA, RP) values ("Desenvolvimento Web", 221586, 22763430, "P09532786");
+insert into materia(materia, ID, RA, RP) values ("Desenvolvimento Web", 221586, 22456432, "P09532786");
+
+
+insert into aluno(RA, nome, curso) values (22001129, "Maria Eduarda", "Eng Computacao");
+insert into aluno(RA, nome, curso) values (22763430, "Henrique Laiter", "Eng Computacao");
+insert into aluno(RA, nome, curso) values (22456432, "Julia Machado", "Eng Computacao");
+
+insert into professor(nomep, RP, materia) values ("Xastre", "P09532786", "Desenvolvimento Web");
+insert into professor(nomep, RP, materia) values ("Pannain", "P96837234", "Sistemas digitais");
+
+select * from materia;
+select * from aluno;
+select * from professor;
